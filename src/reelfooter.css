@@ -1,0 +1,27 @@
+.Reelfooter{
+    position: relative;
+    bottom: 125px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+
+
+}
+.rf_text{
+    flex:1;
+
+}
+.rf_text h3{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bolder;
+
+}
+.rf_text_des{
+    font-size: 0.5rem;
+    width: 80%;
+    text-shadow: black;
+    color: white;
+    word-wrap: break-word;
+}

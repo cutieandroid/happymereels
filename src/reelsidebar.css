@@ -1,0 +1,16 @@
+.reelsidebar{
+
+    position: absolute;
+    top:60%;
+    right:10px;
+
+}
+.likebutton{
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}
+.filledheart{
+    color:red;
+}
