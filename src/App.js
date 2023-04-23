@@ -1,43 +1,37 @@
 import './reels.css';
 import Reel from "./reel";
+import React from "react";
 import './App.css'
 import {useEffect, useState} from "react";
 import db from './firebase';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Recreels from "./recreels";
+import Randomreels from "./randomreels";
 
 function App() {
 
-    const[reels,setreels]=useState([])
+    return (
 
-    useEffect(() => {
-        db.collection("reels").onSnapshot((snapshot) =>
-            setreels(snapshot.docs.map((doc) => doc.data()))
-        );
-    }, []);
+        <BrowserRouter>
+            <Routes>
 
-  return (
+                <Route path="/"
+                       element={<Randomreels/>}
+                >
 
-    <div className="app">
+                </Route>
 
-        <div className="app_reel">
+                <Route path="/recreels"
 
+                       element={<Recreels/>}>
 
-            {reels.map(
-                ({source,username,description,likes})=>(
-                    <Reel source={source}
-                          username={username}
-                          description={description}
-                          likes={likes}
+                </Route>
+
+            </Routes>
 
 
-                    />
-
-                )
-            )}
-
-
-        </div>
-    </div>
-  );
+        </BrowserRouter>
+    );
 }
 
 export default App;

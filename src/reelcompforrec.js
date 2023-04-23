@@ -4,7 +4,7 @@ import Reelfooter from "./reelfooter"
 import Reelsidebar from "./sidebar";
 
 
-function Reel({id,source,username, description,likes,user}){
+function Reelrec({id,source,username, description,likes,user}){
     const reelref=useRef(null);
     const[playing,setplaying]=useState(false);
 
@@ -33,12 +33,8 @@ function Reel({id,source,username, description,likes,user}){
             </video>
 
             <Reelfooter username={username}
-                       description={description}  />
+                        description={description}  />
 
-            <Reelsidebar likes={likes}
-                         id={id}
-                         user={user}
-            />
 
         </div>
 
@@ -46,4 +42,4 @@ function Reel({id,source,username, description,likes,user}){
 }
 
 
-export default Reel
+export default Reelrec

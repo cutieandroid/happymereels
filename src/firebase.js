@@ -2,13 +2,12 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 const firebaseConfig = {
-    apiKey: "AIzaSyC1BYsAbdJ1Tb0rkZ49-Df0d1582YCWkjI",
-    authDomain: "reels-1605e.firebaseapp.com",
-    projectId: "reels-1605e",
-    storageBucket: "reels-1605e.appspot.com",
-    messagingSenderId: "557581994160",
-    appId: "1:557581994160:web:63b6b52789c06a186d1375",
-    measurementId: "G-1QZ1WDLVBM"
+    apiKey: "AIzaSyBwDbGdAwqQ0z0NBNSHNW3NlUdDjC2nfFg",
+    authDomain: "happyme-e3f50.firebaseapp.com",
+    projectId: "happyme-e3f50",
+    storageBucket: "happyme-e3f50.appspot.com",
+    messagingSenderId: "313288181905",
+    appId: "1:313288181905:web:41441310bd8118f5b79730"
 };
 
 const firebaseapp=firebase.initializeApp(firebaseConfig);

@@ -13,10 +13,10 @@ html{
 
 .app_reel{
     position: relative;
-    height: 80vh;
+    height: 100%;
     border-radius: 20px;
     overflow: scroll ;
-    width: 80%;
+    width: 100%;
     max-width: 500%;
     scroll-snap-type: y mandatory;
 
