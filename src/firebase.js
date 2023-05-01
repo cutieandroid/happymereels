@@ -2,12 +2,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 const firebaseConfig = {
-    apiKey: "AIzaSyBwDbGdAwqQ0z0NBNSHNW3NlUdDjC2nfFg",
-    authDomain: "happyme-e3f50.firebaseapp.com",
-    projectId: "happyme-e3f50",
-    storageBucket: "happyme-e3f50.appspot.com",
-    messagingSenderId: "313288181905",
-    appId: "1:313288181905:web:41441310bd8118f5b79730"
+   //add your firebase config here 
 };
 
 const firebaseapp=firebase.initializeApp(firebaseConfig);
